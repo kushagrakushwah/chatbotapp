@@ -1,0 +1,913 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day",
+          "Whats up",
+          "Hey",
+          "greetings"
+        ],
+        "responses": [
+          "Hello!",
+          "Good to see you again!",
+          "Hi there, how can I help?"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "cya",
+          "See you later",
+          "Goodbye",
+          "I am Leaving",
+          "Have a Good day",
+          "bye",
+          "cao",
+          "see ya"
+        ],
+        "responses": [
+          "Sad to see you go :(",
+          "Talk to you later",
+          "Goodbye!"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "how",
+        "patterns": [
+          "How are you?",
+          "How is your day?",
+          "How do you feel?",
+          "Are you good?"
+        ],
+        "responses": [
+          "I am fine, thanks for asking!",
+          "I feel great!"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "programming",
+        "patterns": [
+          "What is programming?",
+          "What is coding?",
+          "Tell me about programming",
+          "Tell me about coding",
+          "What is software development?"
+        ],
+        "responses": [
+          "Programming, coding or software development, means writing computer code to automate tasks."
+        ]
+      },
+      {
+        "tag": "wrong_pin_lock",
+        "patterns": [
+          "What happens after entering wrong pin 3 times?",
+          "Explain wrong pin lock feature.",
+          "What if unlock pattern is wrong 3 times?"
+        ],
+        "responses": [
+          "If the pattern/pin is entered wrong 3 times, a photo and location are sent to two emergency numbers via SMS."
+        ]
+      },
+      {
+        "tag": "backup_data",
+        "patterns": [
+          "How do I backup contacts?",
+          "Can I save my messages and call logs?",
+          "What does the backup feature do?"
+        ],
+        "responses": [
+          "You can backup your contacts, SMS, and call logs in PDF format and share them via other apps."
+        ]
+      },
+      {
+        "tag": "remotely_alarm",
+        "patterns": [
+          "How can I ring my phone remotely?",
+          "What is the ATMT ALT command?",
+          "Use alarm via SMS"
+        ],
+        "responses": [
+          "Send 'ATMT ALT' via SMS to your registered number to start the alarm. To stop it, send 'ATM ALTT', even if the phone is in silent mode."
+        ]
+      },
+      {
+        "tag": "female_safety",
+        "patterns": [
+          "How does female safety feature work?",
+          "What happens if I press power button five times?",
+          "Use power button for emergency?"
+        ],
+        "responses": [
+          "Pressing the power button five times will send a photo and location link to two emergency contacts via SMS."
+        ]
+      },
+      {
+        "tag": "homepage_info",
+        "patterns": [
+          "What info does the home page show?",
+          "Does app show shutdown history?",
+          "Is lock/unlock activity shown?",
+          "What is shown on the homepage?",
+          "What does dashboard display?",
+          "What information is visible on home screen?"
+        ],
+        "responses": [
+          "The homepage updates your lock, unlock, restart, and shutdown activity with date and time."
+        ]
+      },
+      {
+        "tag": "accessibility_issue",
+        "patterns": [
+          "Accessibility not working",
+          "Quick ball issue",
+          "If Accessibility Permission is Not Allow and error occurred to Turn off Accessive Ball Or Quick ball then.",
+          "If Accessibility is Automatically Off then."
+        ],
+        "responses": [
+          "Ensure Accessibility Permission is enabled and disable Quick Ball or Assistive Touch if needed from settings."
+        ]
+      },
+      {
+        "tag": "remote_reset",
+        "patterns": ["How to reset phone remotely?", "What is ATMT WRAP command?", "Factory reset via SMS?"],
+        "responses": ["Send 'ATMT WRAP' from your emergency number to reset your phone remotely."]
+      },
+      {
+        "tag": "boost_phone",
+        "patterns": [
+          "How to boost my phone?",
+          "Does the app clean junk files?",
+          "Improve phone performance?"
+        ],
+        "responses": [
+          "The app clears app cache and junk files with one click to boost phone performance."
+        ]
+      },
+      {
+        "tag": "remote_track_front",
+        "patterns": [
+          "Track phone using front camera?",
+          "How to use ATMT TRACK?",
+          "Remote tracking with front camera?"
+        ],
+        "responses": [
+          "Send 'ATMT TRACK' from any number to your registered number to receive a photo from the front camera and location via SMS."
+        ]
+      },
+      {
+        "tag": "remote_track_back",
+        "patterns": [
+          "Track phone using back camera?",
+          "How to use ATMT TRACKB?",
+          "Remote photo from back camera?"
+        ],
+        "responses": [
+          "Send 'ATMT TRACKB' to your registered number to receive a photo from the back camera and location via SMS."
+        ]
+      },
+      {
+        "tag": "service_description",
+        "patterns": [
+          "What is ATMT PRO?",
+          "Describe ATMT PRO service",
+          "What does ATMT PRO include?",
+          "Tell me about ATMT PRO features"
+        ],
+        "responses": [
+          "ATMT PRO is an Android anti-theft service that helps track lost devices, remotely control phone functions, and includes features like SIM change alerts, screen lock, call forwarding status, USB alerts, and thief image capture."
+        ]
+      },
+      {
+        "tag": "data_collection",
+        "patterns": [
+          "What information does ATMT collect?",
+          "Do you collect personal data?",
+          "Is my personal info safe?",
+          "What kind of data is stored?"
+        ],
+        "responses": [
+          "ATMT collects personal details during registration and uses cookies to improve user experience. We do not view or sell your backed-up data."
+        ]
+      },
+      {
+        "tag": "data_usage",
+        "patterns": [
+          "How is my information used?",
+          "Is my data shared with others?",
+          "What happens to my data?",
+          "Does ATMT share data externally?"
+        ],
+        "responses": [
+          "Your data is used only to operate the service and for internal research. It’s not shared with third parties unless essential for recovery or technical support."
+        ]
+      },
+      {
+        "tag": "terms_of_use",
+        "patterns": [
+          "What are the rules for using ATMT?",
+          "Are there usage restrictions?",
+          "Can I use ATMT for any purpose?",
+          "Any legal conditions for use?"
+        ],
+        "responses": [
+          "You must not use ATMT for unlawful activities. Abuse, violations, or offensive behavior may lead to account termination."
+        ]
+      },
+      {
+        "tag": "support",
+        "patterns": [
+          "How can I get support?",
+          "Is technical help available?",
+          "Contact support through WhatsApp?",
+          "Customer care support options?"
+        ],
+        "responses": [
+          "You can reach support via WhatsApp at 7887881990 or email at atmtpro@gmail.com. Our team is ready to help!"
+        ]
+      },
+      {
+        "tag": "account_termination",
+        "patterns": [
+          "How do I cancel my account?",
+          "Delete my ATMT account",
+          "Will I be charged after I cancel?",
+          "How to permanently remove account?"
+        ],
+        "responses": [
+          "You may cancel your account anytime by contacting support via email. All content will be permanently deleted and cannot be recovered. You won’t be charged further after cancellation."
+        ]
+      },
+      {
+        "tag": "modification_and_pricing",
+        "patterns": [
+          "Can ATMT change pricing?",
+          "Will the service change?",
+          "Do I get notified of price updates?",
+          "Is there a price hike notice?"
+        ],
+        "responses": [
+          "ATMT may revise pricing or service features with a 30-day prior notice, typically published on our website."
+        ]
+      },
+      {
+        "tag": "warranty",
+        "patterns": [
+          "Is there a warranty?",
+          "What guarantees are provided?",
+          "Is the service reliable?",
+          "Does ATMT guarantee results?"
+        ],
+        "responses": [
+          "ATMT PRO and its features are provided 'as is' without any express or implied warranties, including fitness for a particular purpose or uninterrupted availability."
+        ]
+      },
+      {
+        "tag": "liability_limitation",
+        "patterns": [
+          "Are you liable if something goes wrong?",
+          "What if I lose data using the service?",
+          "Is ATMT responsible for damages?"
+        ],
+        "responses": [
+          "ATMT is not liable for indirect or consequential damages. If the service is free, we assume no liability whatsoever. Use of the service is at your own risk."
+        ]
+      },
+      {
+        "tag": "feature_usage",
+        "patterns": [
+          "What are the ATMT SOS features?",
+          "How does SIM protection work?",
+          "Can I lock my phone remotely?",
+          "What does USB alert do?",
+          "What is ATMT LOCK feature?"
+        ],
+        "responses": [
+          "ATMT PRO offers features like motion and charger theft protection, ATMT LOCK for screen security, SIM change alerts, USB connection alerts, call forwarding status, and emergency SOS with contact routing."
+        ]
+      },
+      {
+        "tag": "contact_information",
+        "patterns": [
+          "How do I contact ATMT?",
+          "What are ATMT's contact details?",
+          "What is your contact information?",
+          "Give me your contact number and email",
+          "Share ATMT company contact info",
+          "Where is your office located?",
+          "What is ATMT's phone number?",
+          "Tell me how to reach ATMT",
+          "ATMT customer care",
+          "ATMT email and phone number"
+        ],
+        "responses": [
+          "Here are our contact details:\n\nCompany: Aarush GOC Pvt Ltd, ATMT\nAddress: 301, 302, Siddhivinayak Home Apartment, Chapru Nagar Chowk, Near Dominos Pizza, next to Telephone Exchange Square, Nagpur-440008\n\nCustomer Care Number: +91 9560446447\nEmail: atmthub@gmail.com, sale@atmthub.com, services@atmthub.com\nWorking Hours: Monday to Saturday, 10:00 AM to 7:00 PM"
+        ]
+      },
+      {
+        "tag": "accessibility_permission_error",
+        "patterns": [
+          "Accessibility permission is not allowed",
+          "If Accessibility Permission is Not Allow and error occurred to Turn off Accessive Ball Or Quick ball then.",
+          "How to fix accessibility error",
+          "Can't allow accessibility permission",
+          "Accessibility permission issue with quick ball",
+          "Accessive ball causing accessibility error",
+          "How do I enable accessibility permission?",
+          "Error with accessibility settings"
+        ],
+        "responses": [
+          "To fix the accessibility permission error, follow these steps:\n1. Go to your mobile settings and search for 'Quick Ball' or 'Accessive Ball'.\n2. Turn OFF the Quick Ball or Accessive Ball.\n3. After this, your accessibility permission should be allowed."
+        ]
+      },
+      {
+        "tag": "battery_optimization_issue",
+        "patterns": [
+          "Battery optimization not allowing",
+          "How to fix battery optimization permission issue?",
+          "Battery saver blocking the app",
+          "App is restricted by battery settings",
+         "If Your Battery Optimization Permission Is Not Allowing In Mobile then."
+        ],
+        "responses": [
+          "Go to the mobile settings and search for 'Battery & Performance'. Then go to Battery Saver settings → App Battery Saver → ATMT PRO → Select 'No Restriction'."
+        ]
+      },
+      {
+        "tag": "device_admin_issue",
+        "patterns": [
+          "Device admin app not enabling",
+          "Why can't I enable device admin?",
+          "Device admin not working on my phone",
+          "If Your Device Admin App not Enable then."
+        ],
+        "responses": [
+          "Please check if your phone is a Samsung Galaxy Knox device. Some Knox-enabled models do not allow device admin access."
+        ]
+      },
+      {
+        "tag": "otp_not_received_signup",
+        "patterns": [
+          "I didn’t receive OTP after signup",
+          "OTP not coming during sign up",
+          "No OTP after registration"
+        ],
+        "responses": [
+          "Ensure you have active internet access. Try signing up again with a different email ID, and confirm your registered number is correct."
+        ]
+      },
+      {
+        "tag": "activation_code_invalid",
+        "patterns": [
+          "Activation code is invalid",
+          "Code not accepted",
+          "Why is my activation key not working?",
+          "If Activation code shows Invalid"
+        ],
+        "responses": [
+          "Check if you entered the activation code correctly. If the issue remains, contact support to verify your code."
+        ]
+      },
+      {
+        "tag": "turn_off_talkback",
+        "patterns": [
+          "How to turn off talkback?",
+          "Disable talkback",
+          "Talkback is on how to turn off",
+          "Turn off screen reader",
+          "Stop talkback",
+          "How to TURN-OFF Talkback?"
+        ],
+        "responses": [
+          "To turn off Talkback: Open Settings → Accessibility → Talkback → Turn Talkback OFF → Confirm with OK. Remember to double-click when Talkback is active."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "security_contact_not_saving",
+        "patterns": [
+          "Security contact not saving",
+          "Can't update emergency number",
+          "Why won't my security number save?",
+          "Contact update failed",
+          "Emergency number not updating",
+          "If Security Contact Not Save or Update then."
+        ],
+        "responses": [
+          "If security contacts aren't saving: 1. Check your internet connection/speed 2. Refresh your network 3. Try saving the numbers again."
+        ]
+      },
+      {
+        "tag": "forgot_password",
+        "patterns": [
+          "I forgot my password",
+          "Can't remember password",
+          "How to reset password?",
+          "Password recovery",
+          "Need new password",
+          "If You Forget password then."
+        ],
+        "responses": [
+          "Click 'Forgot password', enter your email-ID. An OTP will be sent to your registered number. Create and confirm a new password, then sign in again."
+        ]
+      },
+      {
+        "tag": "forgot_email",
+        "patterns": [
+          "I forgot my email",
+          "Can't remember email ID",
+          "Where to find my registered email?",
+          "How to recover email?",
+          "Lost my email",
+          "If You Forget email id then."
+        ],
+        "responses": [
+          "To find your email: Open ATMT Pro → Go to Profile → Your email ID will be displayed there."
+        ]
+      },
+      {
+        "tag": "emergency_number_help",
+        "patterns": [
+          "Forgot emergency number",
+          "Lost my phone without emergency number",
+          "How to recover emergency contacts?",
+          "No access to emergency number",
+          "Help with lost mobile",
+          "Forget your emergency no? If you lose your mobile? Don’t have emergency no with you? how to help yourself?"
+        ],
+        "responses": [
+          "If you've lost your phone without emergency numbers: 1. Visit https://www.atmthub.com/login 2. Enter your email-ID and password 3. Access your emergency contacts through the User Portal."
+        ]
+      },
+      {
+        "tag": "redmi_sms_issue",
+        "patterns": [
+          "Not receiving SMS on Redmi/MI phones",
+          "Emergency number SMS not coming in Xiaomi",
+          "MI phone SMS problem",
+          "Redmi SMS not working",
+          "Fix SMS reception in MIUI"
+        ],
+        "responses": [
+          "For Redmi/MI phones: 1. Open ATMT Pro → Settings → Turn ON AUTOSTART. 2. Set Battery Saver to 'No restriction' for ATMT Pro. 3. Go to Other Permissions → Allow ALL permissions."
+        ]
+      },
+      {
+        "tag": "accessibility_auto_off",
+        "patterns": [
+          "Accessibility keeps turning off",
+          "ATMT Pro accessibility disabled",
+          "Why does accessibility reset?",
+          "Fix automatic accessibility off",
+          "Redmi accessibility problem"
+        ],
+        "responses": [
+          "To prevent accessibility turning off: 1. Lock ATMT Pro in background (Redmi: Long-press ATMT Pro in recent apps → Lock). 2. This will keep accessibility from being disallowed automatically."
+        ]
+      },
+      {
+        "tag": "sensor_alert_issue",
+        "patterns": [
+          "Siren is ringing without pin",
+          "Sensor alert has no pin set",
+          "Stop false alarm siren",
+          "Emergency siren won't stop",
+          "Sensor pin not working"
+        ],
+        "responses": [
+          "If siren rings without pin: 1. Swipe away app from recents. 2. Reopen ATMT Pro. 3. Tap '+' → Sensor Activation → Set Pin. 4. Turn on sensor → Stop with new pin."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "unblock_sim",
+        "patterns": [
+          "How to unblock calls?",
+          "Authorize blocked number",
+          "SIM calls are blocked",
+          "Unblock emergency number",
+          "ATMT unblock process"
+        ],
+        "responses": [
+          "To unblock calls: Send 'ATMT UNBLOCK' as text message from your emergency number to the blocked number."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "get_exact_location",
+        "patterns": [
+          "Location not accurate",
+          "How to improve GPS?",
+          "Get precise location",
+          "Fix map accuracy",
+          "Google Maps wrong location"
+        ],
+        "responses": [
+          "For exact location: 1. Update Google Maps. 2. Long-press map → Info → Storage → Clear Cache. 3. Map Settings → Clear All History."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "realme_sms_issue",
+        "patterns": [
+          "Realme/Oppo SMS not receiving",
+          "Emergency SMS problem in Oppo",
+          "ColorOS SMS issue",
+          "Fix ATMT Pro SMS in Realme",
+          "Oppo notifications not coming"
+        ],
+        "responses": [
+          "For Realme/Oppo: 1. Open Phone Manager → Privacy Permission → App Permission. 2. Enable: 'Read app notifications' and 'Read app usage access' for ATMT Pro."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "samsung_sms_issue",
+        "patterns": [
+          "Samsung SMS not working",
+          "Emergency number SMS issue in Samsung",
+          "OneUI notifications problem",
+          "Fix ATMT Pro in Samsung",
+          "Galaxy phone SMS not receiving"
+        ],
+        "responses": [
+          "For Samsung: Go to Settings → Search 'Special Access' → 1. Enable 'Notifications access' for ATMT Pro 2. Enable 'Usage data access' for ATMT Pro."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "vivo_sms_issue",
+        "patterns": [
+          "Vivo phone SMS not coming",
+          "Funtouch OS SMS problem",
+          "ATMT Pro notifications in Vivo",
+          "Fix emergency SMS in Vivo",
+          "Vivo notifications access"
+        ],
+        "responses": [
+          "For Vivo: Go to Settings → Privacy → 1. Enable 'Notification access' for ATMT Pro 2. Enable 'App with usage access' for ATMT Pro."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "registration_documents",
+        "patterns": [
+          "Show company registration documents",
+          "What documents do you have?",
+          "Company legal papers",
+          "Proof of registration",
+          "Can I see your certificates?"
+        ],
+        "responses": ["Yes, we can provide our company registration documents upon request. Please contact our support team for verified copies."],
+        "context_set": ""
+      },
+      {
+        "tag": "required_documents",
+        "patterns": [
+          "Documents needed to start business",
+          "Registration requirements",
+          "What papers for distributorship?",
+          "Legal documents required",
+          "Business setup paperwork"
+        ],
+        "responses": ["You'll need: GST certificate, PAN card, Aadhar card, Counter Address and Mail ID to begin the business process."],
+        "context_set": ""
+      },
+      {
+        "tag": "future_updates",
+        "patterns": [
+          "Are new features coming?",
+          "App updates planned?",
+          "Future developments",
+          "What's next for ATMT Pro?",
+          "Roadmap for the app"
+        ],
+        "responses": ["Yes, we continuously work on updates and new features for ATMT Pro mobile app to enhance user experience and security."],
+        "context_set": ""
+      },
+      {
+        "tag": "awards_certificates",
+        "patterns": [
+          "Show me your awards",
+          "Award winning proof",
+          "Company achievements",
+          "Any recognition certificates?",
+          "Video of award function"
+        ],
+        "responses": ["Yes, we can share our award certificates and event videos. Please contact our marketing department for these materials."],
+        "context_set": ""
+      },
+      {
+        "tag": "competitive_advantage",
+        "patterns": [
+          "Why choose you over competitors?",
+          "What makes you better?",
+          "Unique selling points",
+          "Distributorship benefits",
+          "Competitive advantages"
+        ],
+        "responses": ["If you believe in technology-driven business solutions, you're on the right path. We lead the market with innovative products and have no direct competitors offering comparable solutions."],
+        "context_set": ""
+      },
+      {
+        "tag": "area_coverage",
+        "patterns": [
+          "What areas for distributors?",
+          "Population requirements",
+          "Super stockiest coverage",
+          "Business territory sizes",
+          "Minisuper area details"
+        ],
+        "responses": ["We work on population-based districts: Distributor (10 Lakh population), Minisuper (30 Lakh), Superstockiest (50 Lakh)."],
+        "context_set": ""
+      },
+      {
+        "tag": "marketing_strategy",
+        "patterns": [
+          "How do you market?",
+          "Promotion methods",
+          "Advertising strategy",
+          "Marketing approach",
+          "Brand promotion tactics"
+        ],
+        "responses": ["Our multi-channel strategy includes: Offline (Posters, Dangles, Banners), Dedicated sales managers (company-paid), Digital (TV ads, YouTube, WhatsApp/SMS campaigns, Facebook/Instagram marketing)."],
+        "context_set": ""
+      },
+      {
+        "tag": "code_purchasing",
+        "patterns": [
+          "Minimum code requirements",
+          "How many codes to buy?",
+          "Distributorship codes",
+          "Super stockiest purchase",
+          "Minisuper code quantity"
+        ],
+        "responses": ["Minimum purchase: Distributorship (2000 codes), Minisuper (6000 codes), Superstockiest (10000 codes)."],
+        "context_set": ""
+      },
+      {
+        "tag": "unsold_codes",
+        "patterns": [
+          "What if codes don't sell?",
+          "Unsold inventory solution",
+          "Purchase backup plan",
+          "Code return policy",
+          "Minimum sales guarantee"
+        ],
+        "responses": ["If your purchased codes don't sell, we'll provide alternate options and support to help move your inventory."],
+        "context_set": ""
+      },
+      {
+        "tag": "code_pricing",
+        "patterns": [
+          "What is the price per code?",
+          "Rate of codes with GST",
+          "Distributorship code cost",
+          "Super stockiest pricing",
+          "How much for each code?",
+          "GST rate on codes"
+        ],
+        "responses": [
+          "Pricing including GST: Distributorship ₹135 per code, Super Stockiest ₹120 per code. These rates are inclusive of all taxes."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "price_negotiation",
+        "patterns": [
+          "Can we negotiate prices?",
+          "Is pricing flexible?",
+          "Discount on bulk purchase?",
+          "Rate bargaining possible?",
+          "Are rates fixed?"
+        ],
+        "responses": [
+          "Our rates are non-negotiable for both Distributorship and Super Stockiest partnerships to maintain uniform pricing across all channels."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "retail_price",
+        "patterns": [
+          "What should we charge retailers?",
+          "Recommended resale price",
+          "MRP to retailers",
+          "Distributor selling price",
+          "Retailer pricing guidelines"
+        ],
+        "responses": [
+          "The standard sell price to retailers is ₹250 per code when you take Distributorship."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "direct_customer_sales",
+        "patterns": [
+          "Can we sell directly to customers?",
+          "B2C sales allowed?",
+          "End-user selling permission",
+          "Direct retailing options",
+          "Customer direct purchase"
+        ],
+        "responses": [
+          "Yes, as a Distributor or Super Stockiest, you're permitted to sell directly to end customers in addition to supplying retailers."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "vacant_district",
+        "patterns": [
+          "What if no distributor in area?",
+          "Handling empty territories",
+          "District without distributor",
+          "Covering uncovered areas",
+          "Territory management"
+        ],
+        "responses": [
+          "As a Super Stockiest in a district without Distributors, you can onboard new Distributors yourself. We'll also provide you with qualified leads to help expand your network."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "marketing_executive",
+        "patterns": [
+          "About the provided sales manager",
+          "Marketing executive details",
+          "Who appoints the salesperson?",
+          "Executive hiring process",
+          "Local sales staff information"
+        ],
+        "responses": [
+          "1 local Sales Manager will be: Recruited by you (knowing local market/language), Interviewed/Trained by us, and Salaried (₹15,000) by company. They'll work under both company and your direction."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "executive_ownership",
+        "patterns": [
+          "Who controls the marketing executive?",
+          "Sales staff management rights",
+          "Executive reporting structure",
+          "Team ownership details",
+          "Staff supervision authority"
+        ],
+        "responses": [
+          "You'll have full rights/ownership over your Marketing Executive. They'll follow both company guidelines and your local direction for optimal market penetration."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "agreement_period",
+        "patterns": [
+          "Contract duration",
+          "How long is partnership valid?",
+          "Agreement renewal policy",
+          "Validity period",
+          "Annual contract terms"
+        ],
+        "responses": [
+          "All partnerships have 1-year agreements with automatic renewal, ensuring continuous business operations without interruption."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "agreement_copy",
+        "patterns": [
+          "Can I see the draft agreement?",
+          "Send me distributor contract copy",
+          "Super stockiest agreement sample",
+          "Need draft contract",
+          "Show me partnership terms"
+        ],
+        "responses": [
+          "Yes, we can provide a draft copy of the agreement. Please share your email address so we can send the document for your review."
+        ],
+        "context_set": "request_email"
+      },
+      {
+        "tag": "renewal_charges",
+        "patterns": [
+          "Renewal fees after agreement",
+          "Annual renewal cost",
+          "Contract extension charges",
+          "What to pay after 1 year?",
+          "Partnership continuation fees"
+        ],
+        "responses": [
+          "The company covers all renewal charges after completion of the agreement period - there are no additional fees for distributors/super stockiests."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "legal_stamp_paper",
+        "patterns": [
+          "Agreement on stamp paper?",
+          "Who pays stamp duty?",
+          "Legal contract costs",
+          "Advocate charges for agreement",
+          "Court stamp paper requirements"
+        ],
+        "responses": [
+          "Yes, agreements are executed on court-legal stamp paper. The company bears all stamp duty fees and associated legal charges."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "marketing_materials",
+        "patterns": [
+          "What promotional materials provided?",
+          "Language options for banners",
+          "Free marketing tools",
+          "Posters and pamphlets availability",
+          "Branding material support"
+        ],
+        "responses": [
+          "We provide complete marketing kits including posters, banners and pamphlets in both Hindi and English languages at no additional cost."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "marketing_survey",
+        "patterns": [
+          "Is market survey required?",
+          "Pre-distributorship research",
+          "Territory analysis process",
+          "Feasibility study needed?",
+          "How to survey potential market?"
+        ],
+        "responses": [
+          "Market surveys are optional but recommended. You may conduct your own assessment or consult our market analysts for territory insights."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "contract_termination",
+        "patterns": [
+          "How to cancel agreement?",
+          "Early termination policy",
+          "Refund if I want to quit",
+          "Cancellation charges",
+          "Exit process before term ends"
+        ],
+        "responses": [
+          "Agreements are non-refundable and binding. Early termination details are specified in the contract terms - please review Section 8 of the agreement."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "business_risks",
+        "patterns": [
+          "What challenges will I face?",
+          "Distributorship difficulties",
+          "Potential business risks",
+          "Common problems in this role",
+          "Market challenges"
+        ],
+        "responses": [
+          "The main challenge is continuously upgrading your marketing skills. We provide regular training and support to help you adapt to market changes."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "dispatch_logistics",
+        "patterns": [
+          "Who pays courier charges?",
+          "Code delivery costs",
+          "Transportation fees for stock",
+          "Shipping from Nagpur office",
+          "To-pay or prepaid delivery"
+        ],
+        "responses": [
+          "All codes are dispatched from our Nagpur office with transportation costs fully covered by the company - no charges to distributors."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "transit_damage",
+        "patterns": [
+          "What if goods damaged in transit?",
+          "Lost shipment responsibility",
+          "Natural calamity during delivery",
+          "Stock damage claim process",
+          "Transport risk coverage"
+        ],
+        "responses": [
+          "The company assumes full responsibility for goods in transit. We cover all losses due to damage or natural calamities during transportation."
+        ],
+        "context_set": ""
+      }
+
+
+
+      
+      
+    ]
+  }
+  
